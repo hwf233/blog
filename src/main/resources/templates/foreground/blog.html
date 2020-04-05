@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>详情页面</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" data-filtered="filtered">
+    <link rel="stylesheet" href="/foreground/css/me.css">
+</head>
+<body>
+<!--导航-->
+<div th:include="foreground/navgation :: nav"></div>
+<!--中间内容-->
+<div id="waypoint" class="m-container-small m-padded-tb-big animated fadeIn">
+    <div class="ui container">
+        <div class="ui top attached segment">
+            <!--头部区域-->
+            <div class="ui horizontal link list">
+                <div class="item">
+                    <img src="https://unsplash.it/100/100?image=1005"  alt="" class="ui avatar image">
+                    <div class="content"><a href="#" class="header" >李仁密</a></div>
+                </div>
+                <div class="item">
+                    <i class="calendar icon"></i>2017-10-01
+                </div>
+                <div class="item">
+                    <i class="eye icon"></i> 2342
+                </div>
+            </div>
+        </div>
+        <div class="ui attached segment">
+            <!--图片区域-->
+            <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui fluid rounded image">
+        </div>
+        <div class="ui  attached padded segment">
+            <!--内容-->
+            <div class="ui right aligned basic segment">
+                <div class="ui orange basic label">原创</div>
+            </div>
+
+            <h2 class="ui center aligned header">关于刻意练习的清单</h2>
+            <br>
+            <h4>本篇引语</h4>
+
+            <p>
+                《学而》是《论语》第一篇的篇名。《论语》中各篇一般都是以第一章的前二三个字作为该篇的篇名。《学而》一篇包括16章，内容涉及诸多方面。其中重点是「吾日三省吾身」；「节用而爱人，使民以时」；「礼之用，和为贵」以及仁、孝、信等道德范畴。 </p>
+
+            <h4>原文</h4>
+
+            <p>子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」 </p>
+
+            <h4>译文</h4>
+
+            <p>孔子说：「学了又时常温习和练习，不是很愉快吗？有志同道合的人从远方来，不是很令人高兴的吗？人家不了解我，我也不怨恨、恼怒，不也是一个有德的君子吗？」 </p>
+
+            <h4>评析</h4>
+            <!------标签-------->
+            <div class="me-padded-lr">
+                <div class="ui basic teal left pointing label">方法论</div>
+            </div>
+            <!---------赞赏------->
+            <div class="ui center aligned basic segment">
+                <button class="ui orange basic circular button">赞赏</button>
+            </div>
+        </div>
+        <br>
+        <!--评论栏-->
+        <div class="ui bottom attached segment">
+            <div class="ui form">
+                <div class="field">
+                    <textarea name="content" placeholder="请输入评论信息..."></textarea>
+                </div>
+                <div class="fields">
+                    <div class="field m-mobile-wide m-margin-bottom-small">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="nickname" placeholder="姓名">
+                        </div>
+                    </div>
+                    <div class="field m-mobile-wide m-margin-bottom-small">
+                        <div class="ui left icon input">
+                            <i class="mail icon"></i>
+                            <input type="text" name="email" placeholder="邮箱">
+                        </div>
+                    </div>
+                    <div class="field  m-margin-bottom-small m-mobile-wide">
+                        <button class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+</div>
+
+        <!--底部-->
+        <footer class="ui inverted vertical segment me-padded-tb-massive">
+            <div class="ui center aligned container">
+                <div class="ui inverted divided stackable grid">
+                    <div class="seven wide column">
+                        <h4 class="ui inverted header me-text-thin me-text-spaced me-opacity-mini">最新</h4>
+                        <p class="me-text-thin me-text-spaced me-opacity-mini">这是一个简洁的博客平台，供大家在这里分享身边的趣事、干货亦或者是对生活的思考，希望大家可以在这里有所收获</p>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header me-text-thin me-text-spaced me-opacity-mini">最新</h4>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">故事</a>
+                            <a href="#" class="item">故事</a>
+                            <a href="#" class="item">故事</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header me-text-thin me-text-spaced me-opacity-mini">最新</h4>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">故事</a>
+                            <a href="#" class="item">故事</a>
+                            <a href="#" class="item">故事</a>
+                        </div>
+                    </div>
+                    <div class="three wide column ">
+                        <div class="ui inverted link list">
+                            <div class="item">
+                                <img src="/foreground/images/me.png" class="ui rounded image" alt="" style="width: 110px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui inverted section divider"></div>
+            </div>
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js" data-filtered="filtered"></script>
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.me-item').toggleClass('me-mobile-hide');
+    });
+</script>
+</body>
+</html>
